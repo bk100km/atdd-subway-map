@@ -16,11 +16,10 @@ public class RestAssuredTest {
     @DisplayName("구글 페이지 접근 테스트")
     @Test
     void accessGoogle() {
-        ExtractableResponse<Response> response = null;
-        response =  given()
+        ExtractableResponse<Response> response =  given()
                 .when()
                 .get("https://google.com")
-                .then()
+                .then().log().all()
                 .extract();
         assertThat(response.statusCode()).isEqualTo(HttpStatus.OK.value());
     }
