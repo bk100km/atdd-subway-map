@@ -1,8 +1,12 @@
-package subway;
+package subway.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import subway.repository.LineRepository;
+import subway.model.LineResponse;
+import subway.model.Line;
+import subway.model.LineRequest;
 
 import java.util.List;
 import java.util.Optional;

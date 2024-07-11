@@ -1,4 +1,4 @@
-package subway;
+package subway.model;
 
 import lombok.Getter;
 
@@ -11,7 +11,7 @@ public class LineResponse {
     private final String color;
     private final List<Station> stations;
 
-    LineResponse(Line line) {
+    public LineResponse(Line line) {
         id = line.getId();
         name = line.getName();
         color = line.getColor();

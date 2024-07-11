@@ -1,4 +1,4 @@
-package subway;
+package subway.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,7 +19,7 @@ public class Line {
     private long downStationId;
     private long distance;
 
-    Line(LineRequest lineRequest) {
+    public Line(LineRequest lineRequest) {
         name = lineRequest.getName();
         color = lineRequest.getColor();
         upStationId = lineRequest.getUpStationId();

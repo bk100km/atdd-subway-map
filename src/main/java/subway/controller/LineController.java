@@ -1,8 +1,11 @@
-package subway;
+package subway.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import subway.model.LineResponse;
+import subway.service.LineService;
+import subway.model.LineRequest;
 
 import java.net.URI;
 import java.util.List;
